@@ -1,9 +1,9 @@
 import React from 'react';
 
 type State = {
-  pressedKey: null;
+  pressedKey: string | null;
 };
-export class App extends React.Component<State> {
+export class App extends React.Component<{}, State> {
   state = {
     pressedKey: null,
   };
